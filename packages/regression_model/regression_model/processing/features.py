@@ -38,7 +38,7 @@ class DateTransformer(BaseEstimator, TransformerMixin):
 
 class NLPTransformer(BaseEstimator, TransformerMixin):
 
-    def __init__(self, variables=None, pipe='en_core_web_lg'):
+    def __init__(self, variables=None, pipe='en_core_web_md'):
         if not isinstance(variables, list):
             self.variables = [variables]
         else:
